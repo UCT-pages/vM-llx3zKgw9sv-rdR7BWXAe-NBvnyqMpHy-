@@ -23,7 +23,7 @@ body {
 }
 
 .btn {
-    background-color: #4CAF50; /* Verde */
+    background-color: #4f5dd6; /* Verde */
     color: white;
     padding: 15px 32px;
     text-align: center;
@@ -32,6 +32,40 @@ body {
     font-size: 16px;
     margin: 10px;
     border-radius: 5px;
+}
+/* birrete */
+.container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.sombrero {
+    position: absolute;
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    animation: flotar 3s infinite ease-in-out;
+}
+
+@keyframes flotar {
+    0% {
+        transform: translateY(0px) rotate(0deg);
+    }
+    25% {
+        transform: translateY(-20px) rotate(30deg);
+    }
+    50% {
+        transform: translateY(0px) rotate(60deg);
+    }
+    75% {
+        transform: translateY(-20px) rotate(90deg);
+    }
+    100% {
+        transform: translateY(0px) rotate(120deg);
+    }
 }
 /* 
 body {
